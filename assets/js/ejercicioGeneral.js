@@ -3,7 +3,7 @@ let userName = "bfunieles"
 let passwordName = "B123456F"
 
 // Variable de intentos 
-let intentos = 0
+let intentos = 1
 
 do {
     let setUser = prompt("Usuario de acceso").toLocaleLowerCase()
@@ -20,7 +20,6 @@ do {
                 4. Ejercicio 4
                 5. Cerrar Sesión
                 `))
-
             switch (option) {
                 case 1:
                     alert("caso 1")
@@ -43,6 +42,8 @@ do {
                     }
                     alert("Ciclo Terminado.")
                     break;
+
+                    '' `` 
 
                 case 4:
                     alert("caso 4")
