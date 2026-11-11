@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="d-flex justify-content-center aling-item-center">
+        <h2>SISTEMA SARA</h2>
+    </div>
+    <hr>
+    <div class="p-4">
+        <div class="form-field d-flex">
+            <div class=" col-8">
+                <label for="documento" class="form-label">Edad</label>
+                <input type="number" class="form-control" id="age">
+                <div class="form-text">
+                    <small id="error_success_text" class="underline-primary"></small>
+                </div>
+            </div>
+            <div class="col-4">
+                <button onclick="validateAge()" class="btn-solid theme-primary ">Buscar</button>
+            </div>
+        </div>
+
+        <div class="form-field">
+            <label for="documento" class="form-label">Tipo de documento</label>
+            <select type="number" class="form-control" id="documentType">
+                <option value="Cedula de ciudadanía">Cedula de ciudadanía</option>
+                <option value="Pasaporte">Pasaporte</option>
+            </select>
+        </div>
+
+        <div class="form-field">
+            <label for="documento" class="form-label">Documento</label>
+            <input type="number" class="form-control" id="document">
+        </div>
+
+        <div class="form-field">
+            <label for="documento" class="form-label">Nombre</label>
+            <input class="form-control" id="name">
+        </div>
+
+        <div class="form-field">
+            <label for="documento" class="form-label">Apellidos</label>
+            <input class="form-control" id="lastname">
+        </div>
+
+        <div class="form-field">
+            <label for="documento" class="form-label">Salario</label>
+            <input type="number" class="form-control" id="salary">
+        </div>
+
+        <div class="d-flex">
+            <div class="form-field col-6">
+                <label for="documento" class="form-label">Dias extras laborados</label>
+                <input type="number" class="form-control" id="day">
+            </div>
+            <div class="form-field col-6">
+                <label for="documento" class="form-label">Pago por días</label>
+                <input onkeyup="calculateSalary()" type="number" class="form-control" id="pay_for_day">
+            </div>
+        </div>
+        <div class="form-field">
+            <label for="documento" class="form-label">PAGO TOTAL</label>
+            <h2 class="form-control h1" id="total"> </h2>
+        </div>
+
+        <div class="mt-4">
+            <button onclick="saveInfo()" class="btn-solid theme-primary col-12">GUARDAR DATOS</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>RESULTADO</h2>
+        <div class="alert theme-primary flex-column" role="alert">
+            <p id="documentResponse"></p>
+            <p id="fullnameResponse"></p>
+            <p id="salaryResponse"></p>
+            <p id="payDayResponse"></p>
+            <p id="totalResponse"></p>
+        </div>
+    </div>
+
+
+
+    <!-- <script src="js/main.js"></script> -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+    <script src="useClients.js"></script>
+</body>
+
+</html>
