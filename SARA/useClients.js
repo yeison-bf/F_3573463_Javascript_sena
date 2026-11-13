@@ -45,6 +45,8 @@ function saveInfo() {
     document.getElementById("payDayResponse").innerText = "Días extras:  " + day
     document.getElementById("payDayResponse").innerText = "Valor por día extra: " + pay_for_day
     document.getElementById("payDayResponse").innerText = "Pago por días extras: " + ( (day * pay_for_day))
-    document.getElementById("totalResponse").innerText = "Pago total : " + (salary + (day * pay_for_day))
+    document.getElementById("totalResponse").innerText = "Pago total : " 
 }
 
+
+let dataEmpleyees = []
